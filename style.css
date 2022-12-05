@@ -152,7 +152,7 @@ body {
 @media screen and (min-width: 750px) {
   body {
     max-width: 1440px;
-    background-color: hsl(205, 33%, 90%);
+    background-color: var(--unread-bg);
   }
   main {
     max-width: 50%;
