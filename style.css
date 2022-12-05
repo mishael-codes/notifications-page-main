@@ -136,6 +136,7 @@ body {
 .timeline + div:hover {
   border: none;
   background-color: hsl(205, 33%, 90%);
+  cursor: pointer;
 }
 
 .attribution {
