@@ -161,4 +161,13 @@ body {
     border-radius: 15px;
     background-color: var(--bg-color);
   }
+
+  .notification-item{
+    position: relative;
+  }
+
+  #mypic{
+    position: absolute;
+    right: 0;
+  }
 }
