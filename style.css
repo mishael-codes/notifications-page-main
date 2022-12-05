@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+  --unread: hsl(1, 90%, 64%);
+  --unread-bg: hsl(210, 60%, 98%);
+  --notification-count-bg: hsl(219, 85%, 26%);
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: hsl(219, 14%, 63%);
+  --text-color-2: hsl(219, 12%, 42%);
+  --username-text: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: .7s;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1.1rem;
+}
+
+.notifications-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.notifications-header h1 {
+  font-size: 1.2rem;
+}
+
+#notification-count {
+  color: hsl(211, 68%, 94%);
+  padding: 0.1rem 1rem;
+  border-radius: 15px;
+  background-color: var(--notification-count-bg);
+}
+
+.mark-read {
+  font-size: 0.8rem;
+  color: hsl(219, 14%, 63%);
+  cursor: pointer;
+}
+.username:hover,
+.mark-read:hover,
+.notification b:hover {
+  color: var(--notification-count-bg);
+  cursor: pointer;
+}
+
+.notifications-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notification-item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  margin: 0.3rem 0.5rem;
+}
+
+.image img,
+#mypic {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+}
+
+.notification {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.username {
+  font-weight: 800;
+  color: var(--username-text);
+}
+
+.unread {
+  position: relative;
+  background: var(--unread-bg);
+  border-radius: 5px;
+  padding: 0.9rem 0.6rem;
+}
+
+.read{
+  position: static;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.unread p:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--unread);
+}
+
+.notification b {
+  color: var(--text-color-2);
+}
+
+.notification a {
+  color: var(--notification-count-bg);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.timeline + div {
+  width: 100%;
+  border: 1px solid;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+}
+
+.timeline + div:hover {
+  border: none;
+  background-color: hsl(205, 33%, 90%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    max-width: 1440px;
+    background-color: hsl(205, 33%, 90%);
+  }
+  main {
+    max-width: 50%;
+    margin: 2.5rem auto;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+  }
+}
