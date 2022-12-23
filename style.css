@@ -162,12 +162,17 @@ body {
     background-color: var(--bg-color);
   }
 
-  .notification-item{
+  /* .notification-item{
     position: relative;
   }
 
   #mypic{
     position: absolute;
     right: 0;
+  } */
+
+  .picture-comment{
+    display: flex;
+    justify-content: space-between;
   }
 }
