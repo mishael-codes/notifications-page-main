@@ -57,5 +57,5 @@ I plan on adding a dark theme to this project in the near future!
 ## Author
 
 - Twitter - [@mishael_codes](https://www.twitter.com/mishael_codes)
-- Instagram - [@mishael.codes](https://www.instagram.com/mishael.codes)
+- Instagram - [@mishael_codes](https://www.instagram.com/mishael_codes)
 - Frontend Mentor - [@mishael-codes](https://www.frontendmentor.io/profile/mishael-codes)
